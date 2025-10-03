@@ -297,9 +297,9 @@ const defaultProjects: Project[] = [
     image:
       "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
     securityDetails:
-      "The MinIO deployment implemented enterprise-grade security:\n\n- OAuth 2.0 integration with OIDC providers (Keycloak, Auth0)\n- TLS encryption for all client and server communications\n- IAM policies with fine-grained access controls\n- Bucket-level encryption with KMS integration\n- Network segmentation and firewall rules\n- Regular security audits and vulnerability assessments\n- LDAP/AD integration for user management\n- Multi-factor authentication enforcement",
+      "The MinIO deployment implemented enterprise-grade security:\\n\\n- OAuth 2.0 integration with OIDC providers (Keycloak, Auth0)\\n- TLS encryption for all client and server communications\\n- IAM policies with fine-grained access controls\\n- Bucket-level encryption with KMS integration\\n- Network segmentation and firewall rules\\n- Regular security audits and vulnerability assessments\\n- LDAP/AD integration for user management\\n- Multi-factor authentication enforcement",
     cicdDetails:
-      "The deployment pipeline automated the entire infrastructure:\n\n- Infrastructure as Code with Terraform/Ansible\n- Automated cluster provisioning and configuration\n- Health checks and monitoring setup\n- Backup and disaster recovery automation\n- Performance benchmarking and optimization\n- Automated certificate management and renewal\n- Configuration drift detection and remediation\n- Blue-green deployment strategies for updates",
+      "The deployment pipeline automated the entire infrastructure:\\n\\n- Infrastructure as Code with Terraform/Ansible\\n- Automated cluster provisioning and configuration\\n- Health checks and monitoring setup\\n- Backup and disaster recovery automation\\n- Performance benchmarking and optimization\\n- Automated certificate management and renewal\\n- Configuration drift detection and remediation\\n- Blue-green deployment strategies for updates",
     technologies: [
       "MinIO",
       "Kubernetes",
@@ -315,6 +315,31 @@ const defaultProjects: Project[] = [
   },
   {
     id: "2",
+    title: "SOC Analyst Security Operations",
+    description:
+      "Established and operated a Security Operations Center with 24/7 monitoring, incident response, threat hunting, and comprehensive security analytics.",
+    category: "security",
+    image:
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80",
+    securityDetails:
+      "The SOC implementation provided comprehensive security operations:\\n\\n- 24/7 security monitoring and alerting\\n- SIEM integration with multiple data sources\\n- Threat intelligence feeds and correlation\\n- Incident response playbooks and automation\\n- Threat hunting and behavioral analysis\\n- Vulnerability management and remediation\\n- Security metrics and KPI reporting\\n- Compliance monitoring and audit support",
+    cicdDetails:
+      "The SOC automation and tooling included:\\n\\n- SOAR platform for incident orchestration\\n- Automated threat detection and response\\n- Security tool integration and API automation\\n- Custom dashboard and reporting automation\\n- Incident ticketing and workflow management\\n- Threat intelligence platform integration\\n- Security awareness training automation\\n- Compliance reporting and evidence collection",
+    technologies: [
+      "Splunk",
+      "QRadar",
+      "Phantom SOAR",
+      "MISP",
+      "TheHive",
+      "Cortex",
+      "ELK Stack",
+      "YARA",
+      "Suricata",
+      "MITRE ATT&CK"
+    ],
+  },
+  {
+    id: "3",
     title: "Kafka CDC Data Pipeline",
     description:
       "Implemented a real-time Change Data Capture (CDC) pipeline using Apache Kafka for streaming database changes with security controls and monitoring.",
@@ -322,9 +347,9 @@ const defaultProjects: Project[] = [
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
     securityDetails:
-      "The Kafka CDC pipeline implemented comprehensive security:\n\n- SASL/SCRAM authentication for all clients\n- TLS encryption for data in transit\n- ACL-based authorization for topic access\n- Schema registry with authentication\n- Data masking for sensitive fields\n- Audit logging for all data access\n- Network isolation and firewall rules\n- Regular security assessments and penetration testing",
+      "The Kafka CDC pipeline implemented comprehensive security:\\n\\n- SASL/SCRAM authentication for all clients\\n- TLS encryption for data in transit\\n- ACL-based authorization for topic access\\n- Schema registry with authentication\\n- Data masking for sensitive fields\\n- Audit logging for all data access\\n- Network isolation and firewall rules\\n- Regular security assessments and penetration testing",
     cicdDetails:
-      "The CDC pipeline deployment included:\n\n- Infrastructure as Code with Terraform\n- Automated Kafka cluster provisioning\n- Schema evolution management\n- Connector deployment automation\n- Performance monitoring and alerting\n- Automated backup and recovery\n- Blue-green deployment for updates\n- Integration testing automation",
+      "The CDC pipeline deployment included:\\n\\n- Infrastructure as Code with Terraform\\n- Automated Kafka cluster provisioning\\n- Schema evolution management\\n- Connector deployment automation\\n- Performance monitoring and alerting\\n- Automated backup and recovery\\n- Blue-green deployment for updates\\n- Integration testing automation",
     technologies: [
       "Apache Kafka",
       "Kafka Connect",
@@ -338,7 +363,7 @@ const defaultProjects: Project[] = [
     ],
   },
   {
-    id: "3",
+    id: "4",
     title: "OWASP Dependency Tracker",
     description:
       "Deployed and configured OWASP Dependency-Track for continuous monitoring of software supply chain vulnerabilities across multiple projects.",
@@ -362,7 +387,7 @@ const defaultProjects: Project[] = [
     ],
   },
   {
-    id: "4",
+    id: "5",
     title: "Nextcloud Self-Hosted Platform",
     description:
       "Deployed a secure, self-hosted Nextcloud instance with enterprise features, encryption, and comprehensive backup strategies.",
@@ -386,7 +411,7 @@ const defaultProjects: Project[] = [
     ],
   },
   {
-    id: "5",
+    id: "6",
     title: "n8n Workflow Automation",
     description:
       "Implemented n8n workflow automation platform for DevSecOps processes with secure integrations and monitoring capabilities.",
@@ -410,7 +435,7 @@ const defaultProjects: Project[] = [
     ],
   },
   {
-    id: "6",
+    id: "7",
     title: "OpenTelemetry Observability",
     description:
       "Implemented comprehensive observability solution using OpenTelemetry for distributed tracing, metrics, and logging across microservices.",
@@ -434,7 +459,7 @@ const defaultProjects: Project[] = [
     ],
   },
   {
-    id: "7",
+    id: "8",
     title: "Secure Kubernetes Deployment",
     description:
       "Implemented a secure Kubernetes deployment with Pod Security Policies, Network Policies, and RBAC for a financial services application.",
@@ -456,7 +481,7 @@ const defaultProjects: Project[] = [
     ],
   },
   {
-    id: "8",
+    id: "9",
     title: "Zero-Trust Pipeline Architecture",
     description:
       "Designed and implemented a zero-trust CI/CD pipeline with comprehensive security controls and verification at each stage.",
@@ -477,7 +502,7 @@ const defaultProjects: Project[] = [
     ],
   },
   {
-    id: "9",
+    id: "10",
     title: "Infrastructure as Code Security",
     description:
       "Developed a secure Infrastructure as Code framework with automated security scanning, policy enforcement, and compliance validation.",
@@ -499,7 +524,7 @@ const defaultProjects: Project[] = [
     ],
   },
   {
-    id: "10",
+    id: "11",
     title: "Container Security Platform",
     description:
       "Built a comprehensive container security platform with vulnerability scanning, runtime protection, and compliance enforcement.",
@@ -521,7 +546,7 @@ const defaultProjects: Project[] = [
     ],
   },
   {
-    id: "11",
+    id: "12",
     title: "Automated Compliance Pipeline",
     description:
       "Created an automated compliance pipeline that continuously validates infrastructure and applications against regulatory requirements.",
@@ -542,7 +567,7 @@ const defaultProjects: Project[] = [
     ],
   },
   {
-    id: "12",
+    id: "13",
     title: "Cloud Security Posture Management",
     description:
       "Implemented a comprehensive cloud security posture management solution with real-time monitoring, automated remediation, and compliance reporting.",

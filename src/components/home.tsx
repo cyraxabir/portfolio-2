@@ -1,12 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  Terminal,
-  Shield,
-  Code,
-  ChevronDown,
-  GitBranch,
-} from "lucide-react";
+import { Terminal, Shield, Code, ChevronDown, GitBranch } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import ExperienceTimeline from "./ExperienceTimeline";
@@ -22,9 +16,7 @@ const Home = () => {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <Terminal className="h-6 w-6 text-green-500" />
-            <span className="text-xl font-mono font-bold">
-              Nafiul Hafiz
-            </span>
+            <span className="text-xl font-mono font-bold">Nafiul Hafiz</span>
           </div>
           <nav className="hidden md:flex space-x-8">
             <a
@@ -114,7 +106,7 @@ const Home = () => {
               <h2 className="text-3xl font-bold mb-6">
                 <span className="text-green-500">~/</span> About Me
               </h2>
-              
+
               {/* Profile Image */}
               <div className="mb-6 flex justify-center md:justify-start">
                 <div className="relative">
@@ -178,17 +170,19 @@ const Home = () => {
                 </div>
                 <div className="text-green-500">
                   <p className="mb-2">$ whoami</p>
-                  <p className="text-white mb-4">DevSecOps Engineer</p>
+                  <p className="text-white mb-4">
+                    Nafiul Hafiz | DevSecOps Engineer
+                  </p>
 
                   <p className="mb-2">$ cat skills.txt</p>
                   <p className="text-white mb-4">
-                    Kubernetes | Docker | AWS | Terraform | CI/CD | Security
-                    Automation
+                    Kubernetes | Docker | AWS | infrastructure | CI/CD | SOC |
+                    Security Automation
                   </p>
 
                   <p className="mb-2">$ uptime</p>
                   <p className="text-white mb-4">
-                    5+ years in DevOps and Security
+                    2+ years in DevOps and Cybersecurity
                   </p>
 
                   <p className="mb-2">$ ping -c 1 availability</p>
@@ -307,9 +301,7 @@ const Home = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
               <Terminal className="h-5 w-5 text-green-500" />
-              <span className="text-lg font-mono font-bold">
-                Nafiul Hafiz
-              </span>
+              <span className="text-lg font-mono font-bold">Nafiul Hafiz</span>
             </div>
             <div className="text-gray-400 text-sm">
               © {new Date().getFullYear()} | Designed & Built with Security in
