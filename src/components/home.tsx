@@ -1,6 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Terminal, Code, Shield, GitBranch, ChevronDown } from "lucide-react";
+import {
+  Terminal,
+  Shield,
+  Code,
+  ChevronDown,
+  GitBranch,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import ExperienceTimeline from "./ExperienceTimeline";
@@ -17,7 +23,7 @@ const Home = () => {
           <div className="flex items-center space-x-2">
             <Terminal className="h-6 w-6 text-green-500" />
             <span className="text-xl font-mono font-bold">
-              DevSecOps.Portfolio
+              Nafiul Hafiz
             </span>
           </div>
           <nav className="hidden md:flex space-x-8">
@@ -80,15 +86,9 @@ const Home = () => {
               Securing pipelines, automating deployments, and building resilient
               infrastructure
             </p>
-            <div className="flex flex-col md:flex-row justify-center gap-4">
+            <div className="flex justify-center">
               <Button className="bg-green-600 hover:bg-green-700 text-white">
                 View Projects
-              </Button>
-              <Button
-                variant="outline"
-                className="border-green-500 text-green-500 hover:bg-green-500/10"
-              >
-                Download Resume
               </Button>
             </div>
           </motion.div>
@@ -114,6 +114,19 @@ const Home = () => {
               <h2 className="text-3xl font-bold mb-6">
                 <span className="text-green-500">~/</span> About Me
               </h2>
+              
+              {/* Profile Image */}
+              <div className="mb-6 flex justify-center md:justify-start">
+                <div className="relative">
+                  <img
+                    src="/images/casual.jpg"
+                    alt="Nafiul Hafiz"
+                    className="w-48 h-48 rounded-full object-cover border-4 border-green-500/30 shadow-lg"
+                  />
+                  <div className="absolute inset-0 rounded-full bg-green-500/10"></div>
+                </div>
+              </div>
+
               <div className="space-y-4 text-gray-300">
                 <p>
                   I'm a DevSecOps Engineer with expertise in building secure,
@@ -295,7 +308,7 @@ const Home = () => {
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
               <Terminal className="h-5 w-5 text-green-500" />
               <span className="text-lg font-mono font-bold">
-                DevSecOps.Portfolio
+                Nafiul Hafiz
               </span>
             </div>
             <div className="text-gray-400 text-sm">
