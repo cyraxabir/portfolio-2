@@ -290,6 +290,151 @@ jobs:
 const defaultProjects: Project[] = [
   {
     id: "1",
+    title: "MinIO Multinode Object Storage",
+    description:
+      "Deployed and configured a highly available MinIO multinode cluster with comprehensive monitoring, OAuth 2.0 integration, and enterprise security features.",
+    category: "infrastructure",
+    image:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
+    securityDetails:
+      "The MinIO deployment implemented enterprise-grade security:\n\n- OAuth 2.0 integration with OIDC providers (Keycloak, Auth0)\n- TLS encryption for all client and server communications\n- IAM policies with fine-grained access controls\n- Bucket-level encryption with KMS integration\n- Network segmentation and firewall rules\n- Regular security audits and vulnerability assessments\n- LDAP/AD integration for user management\n- Multi-factor authentication enforcement",
+    cicdDetails:
+      "The deployment pipeline automated the entire infrastructure:\n\n- Infrastructure as Code with Terraform/Ansible\n- Automated cluster provisioning and configuration\n- Health checks and monitoring setup\n- Backup and disaster recovery automation\n- Performance benchmarking and optimization\n- Automated certificate management and renewal\n- Configuration drift detection and remediation\n- Blue-green deployment strategies for updates",
+    technologies: [
+      "MinIO",
+      "Kubernetes",
+      "OAuth 2.0",
+      "Prometheus",
+      "Grafana",
+      "Terraform",
+      "Ansible",
+      "TLS/SSL",
+      "OIDC",
+      "KMS"
+    ],
+  },
+  {
+    id: "2",
+    title: "Kafka CDC Data Pipeline",
+    description:
+      "Implemented a real-time Change Data Capture (CDC) pipeline using Apache Kafka for streaming database changes with security controls and monitoring.",
+    category: "infrastructure",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+    securityDetails:
+      "The Kafka CDC pipeline implemented comprehensive security:\n\n- SASL/SCRAM authentication for all clients\n- TLS encryption for data in transit\n- ACL-based authorization for topic access\n- Schema registry with authentication\n- Data masking for sensitive fields\n- Audit logging for all data access\n- Network isolation and firewall rules\n- Regular security assessments and penetration testing",
+    cicdDetails:
+      "The CDC pipeline deployment included:\n\n- Infrastructure as Code with Terraform\n- Automated Kafka cluster provisioning\n- Schema evolution management\n- Connector deployment automation\n- Performance monitoring and alerting\n- Automated backup and recovery\n- Blue-green deployment for updates\n- Integration testing automation",
+    technologies: [
+      "Apache Kafka",
+      "Kafka Connect",
+      "Debezium",
+      "Schema Registry",
+      "KSQL",
+      "Prometheus",
+      "Grafana",
+      "Docker",
+      "Kubernetes"
+    ],
+  },
+  {
+    id: "3",
+    title: "OWASP Dependency Tracker",
+    description:
+      "Deployed and configured OWASP Dependency-Track for continuous monitoring of software supply chain vulnerabilities across multiple projects.",
+    category: "security",
+    image:
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80",
+    securityDetails:
+      "The OWASP Dependency-Track implementation provided:\n\n- Software Bill of Materials (SBOM) generation\n- Continuous vulnerability monitoring\n- Policy-based risk assessment\n- Integration with vulnerability databases\n- Automated security notifications\n- License compliance tracking\n- Supply chain risk analysis\n- API security for integrations",
+    cicdDetails:
+      "The CI/CD integration included:\n\n- Automated SBOM generation in build pipelines\n- Vulnerability scanning on every commit\n- Policy gates for deployment approval\n- Integration with existing CI/CD tools\n- Automated reporting and dashboards\n- Webhook notifications for critical vulnerabilities\n- Compliance reporting automation\n- Historical trend analysis",
+    technologies: [
+      "OWASP Dependency-Track",
+      "CycloneDX",
+      "SPDX",
+      "Jenkins",
+      "GitLab CI",
+      "Docker",
+      "PostgreSQL",
+      "REST API",
+      "LDAP"
+    ],
+  },
+  {
+    id: "4",
+    title: "Nextcloud Self-Hosted Platform",
+    description:
+      "Deployed a secure, self-hosted Nextcloud instance with enterprise features, encryption, and comprehensive backup strategies.",
+    category: "infrastructure",
+    image:
+      "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80",
+    securityDetails:
+      "The Nextcloud deployment implemented enterprise security:\n\n- End-to-end encryption for all data\n- LDAP/AD integration for user management\n- Two-factor authentication enforcement\n- Brute force protection and rate limiting\n- File access control and sharing policies\n- Audit logging and monitoring\n- SSL/TLS encryption with HSTS\n- Regular security updates and hardening",
+    cicdDetails:
+      "The deployment pipeline included:\n\n- Infrastructure as Code with Ansible\n- Automated installation and configuration\n- Database setup and optimization\n- SSL certificate automation with Let's Encrypt\n- Backup and restore automation\n- Performance monitoring setup\n- Update management automation\n- Disaster recovery testing",
+    technologies: [
+      "Nextcloud",
+      "PHP",
+      "MySQL",
+      "Redis",
+      "Apache/Nginx",
+      "Let's Encrypt",
+      "Ansible",
+      "Docker",
+      "LDAP"
+    ],
+  },
+  {
+    id: "5",
+    title: "n8n Workflow Automation",
+    description:
+      "Implemented n8n workflow automation platform for DevSecOps processes with secure integrations and monitoring capabilities.",
+    category: "ci/cd",
+    image:
+      "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=800&q=80",
+    securityDetails:
+      "The n8n automation platform security included:\n\n- Encrypted credential storage\n- OAuth 2.0 integration for external services\n- Webhook security with signature validation\n- Network isolation and access controls\n- Audit logging for all workflow executions\n- Secret management integration\n- Role-based access control\n- Regular security assessments",
+    cicdDetails:
+      "The automation workflows included:\n\n- Incident response automation\n- Security alert processing\n- Compliance reporting automation\n- Infrastructure provisioning triggers\n- Monitoring and alerting workflows\n- Integration with ticketing systems\n- Automated documentation generation\n- Performance metrics collection",
+    technologies: [
+      "n8n",
+      "Node.js",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "Kubernetes",
+      "Webhook",
+      "OAuth 2.0",
+      "REST API"
+    ],
+  },
+  {
+    id: "6",
+    title: "OpenTelemetry Observability",
+    description:
+      "Implemented comprehensive observability solution using OpenTelemetry for distributed tracing, metrics, and logging across microservices.",
+    category: "infrastructure",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+    securityDetails:
+      "The OTEL observability implementation secured:\n\n- Encrypted telemetry data transmission\n- Authentication for all collector endpoints\n- Sensitive data filtering and redaction\n- Access controls for observability data\n- Audit trails for data access\n- Compliance with data retention policies\n- Network segmentation for telemetry traffic\n- Regular security reviews of collected data",
+    cicdDetails:
+      "The observability pipeline included:\n\n- Automated instrumentation deployment\n- Collector configuration management\n- Dashboard and alerting automation\n- Performance baseline establishment\n- SLI/SLO monitoring setup\n- Incident response integration\n- Capacity planning automation\n- Cost optimization monitoring",
+    technologies: [
+      "OpenTelemetry",
+      "Jaeger",
+      "Prometheus",
+      "Grafana",
+      "Elasticsearch",
+      "Fluentd",
+      "Kubernetes",
+      "Docker",
+      "Go"
+    ],
+  },
+  {
+    id: "7",
     title: "Secure Kubernetes Deployment",
     description:
       "Implemented a secure Kubernetes deployment with Pod Security Policies, Network Policies, and RBAC for a financial services application.",
@@ -311,7 +456,7 @@ const defaultProjects: Project[] = [
     ],
   },
   {
-    id: "2",
+    id: "8",
     title: "Zero-Trust Pipeline Architecture",
     description:
       "Designed and implemented a zero-trust CI/CD pipeline with comprehensive security controls and verification at each stage.",
@@ -332,7 +477,7 @@ const defaultProjects: Project[] = [
     ],
   },
   {
-    id: "3",
+    id: "9",
     title: "Infrastructure as Code Security",
     description:
       "Developed a secure Infrastructure as Code framework with automated security scanning, policy enforcement, and compliance validation.",
@@ -354,7 +499,7 @@ const defaultProjects: Project[] = [
     ],
   },
   {
-    id: "4",
+    id: "10",
     title: "Container Security Platform",
     description:
       "Built a comprehensive container security platform with vulnerability scanning, runtime protection, and compliance enforcement.",
@@ -376,7 +521,7 @@ const defaultProjects: Project[] = [
     ],
   },
   {
-    id: "5",
+    id: "11",
     title: "Automated Compliance Pipeline",
     description:
       "Created an automated compliance pipeline that continuously validates infrastructure and applications against regulatory requirements.",
@@ -397,7 +542,7 @@ const defaultProjects: Project[] = [
     ],
   },
   {
-    id: "6",
+    id: "12",
     title: "Cloud Security Posture Management",
     description:
       "Implemented a comprehensive cloud security posture management solution with real-time monitoring, automated remediation, and compliance reporting.",
